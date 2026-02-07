@@ -623,7 +623,7 @@
         }
 
         .cv-item-date {
-            color: var(--dark-gray);
+            color: #d6efff;
             font-size: 0.9rem;
             margin-bottom: 10px;
             display: inline-block;
