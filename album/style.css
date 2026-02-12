@@ -74,7 +74,7 @@ body {
     z-index: 1001;
 }
 .viewer-toolbar i {
-    font-size: 22px;
+    font-size: 10px;
     opacity: 0.75;
     cursor: pointer;
     padding: 10px;
@@ -141,7 +141,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 40px;
+    font-size: 20px;
     color: white;
     opacity: 0.6;
     cursor: pointer;
