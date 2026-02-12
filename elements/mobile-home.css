@@ -6,7 +6,7 @@
 /* Media query for tablets (max-width: 992px) */
 @media (max-width: 992px) {
     .hero-section {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 30px;
     }
 

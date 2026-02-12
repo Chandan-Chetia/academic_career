@@ -41,7 +41,7 @@
 
 .hero-image {
     position: relative;
-    box-shadow: var(--box-shadow);
+    box-shadow: 10px 10px 20px  rgba(81, 81, 81, 0.662);
     height: auto;
     width: 100%;
     max-width: 300px;
