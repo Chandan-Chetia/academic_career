@@ -126,7 +126,7 @@
          // Load footer dynamically if footer-container exists
     const footerContainer = document.getElementById('footer-container');
     if (footerContainer) {
-        fetch('./elements/footer.html')
+        fetch('./index-footer.html')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Footer not found');
