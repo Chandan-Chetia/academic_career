@@ -180,20 +180,6 @@ a:hover::after {
     width: 100%;
 }
 
-/* Publication Styles */
-.publication-item {
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid var(--medium-gray);
-    transition: var(--transition);
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.publication-item:hover {
-    background-color: rgba(49, 130, 206, 0.03);
-}
-
 .pub-badge {
     display: inline-block;
     background: var(--accent-color);

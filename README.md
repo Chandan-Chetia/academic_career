@@ -60,6 +60,18 @@ The website is a modern, responsive single-page application (SPA) designed to pr
 │   ├── github.png
 │   ├── instagram.webp
 │   └── x.webp
+├── elements/                       # Homepage elements
+│   ├── bio.html
+│   ├── blog.html
+│   ├── footer.html
+│   ├── photography.html
+│   ├── research.html
+│   ├── resourcess.html
+│   ├── year.html
+│   ├── home.css
+│   ├── style.css
+│   ├── script.js
+│   └── photo-password.js
 ├── documentations/             # Additional documentation and resources
 └── .git/                       # Git version control
 
