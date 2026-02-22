@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paraj Ganchaudhuri</title>
+    <title>Blog & Technical Writing | Dr. Paraj</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 <style>
     .posts .date .year {
@@ -14,8 +15,18 @@
     font-size: 0.875em;
 }
 .posts .date {
-    margin-right: 100px;
+    margin-right: 20px;
     color: var(--grey);
+    flex: 0 0 auto;
+}
+.posts .body {
+    flex: 1;
+}
+.posts .links {
+    display: flex;
+    gap: 15px;
+    margin-top: 0;
+    flex: 0 0 auto;
 }
 .posts .date .day {
     font-size: 1.5em;
@@ -25,6 +36,9 @@
     display: flex;
     padding: 30px 0;
     border-bottom: 1px solid #eee;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
 }
 .posts {
     font-size: .9em;
@@ -37,6 +51,18 @@
     width: 300px;
     text-decoration: none;
 }
+.posts .links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+.posts .links a:hover {
+    opacity: 0.7;
+}
 </style>
 <body>
     <div class="container">
@@ -45,6 +71,33 @@
         </button>
         <div class="overlay" id="overlay"></div>
 
+        <!-- Mobile Navigation Drawer -->
+        <nav class="nav-drawer">
+            <div class="nav-drawer-header">
+                <h2>Navigation</h2>
+            </div>
+            <h2 style="font-family: 'Myraid Pro', serif; padding-bottom: 10px; border-bottom: 1px solid #ccc;">Paraj Ganchaudhuri</h2>
+            <div class="nav-drawer-content">
+                <a href="../index.html" class="tab">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="resources.html" class="tab">
+                    <i class="fas fa-folder-open"></i> Resources
+                </a>
+                <a href="research.html" class="tab">
+                    <i class="fas fa-flask"></i> Research
+                </a>
+                <a href="bio.html" class="tab">
+                    <i class="fas fa-user-graduate"></i> Bio
+                </a>
+                <a href="blog.html" class="tab active">
+                    <i class="fas fa-blog"></i> Blog
+                </a>
+                <a href="photography.html" class="tab">
+                    <i class="fas fa-camera"></i> Photography
+                </a>
+            </div>
+        </nav>
 
         <main class="main-content" id="mainContent">
             <div class="nav-tabs-container">
@@ -84,13 +137,17 @@
                     </div>
                     <div class="body">
                         <h4 class="title" style="font-size: 1.2em;">
-                            <a href="https://iparaj.github.io/files/diary.pdf">                             
-                            Diary
+                            <a href="https://iparaj.github.io/research/">                             
+                            Speculation in US markets makes Indian markets look sane
                             </a>
                         </h4>
-                        <span class="domain" style="font-size: 1.1em;">iparaj.github.io</span>
-                        <div class="description" style="font-size: 1.05em;">I think...
+                        <span class="domain" style="font-size: 1.1em;">x.com</span>
+                        <div class="description" style="font-size: 1.05em;">We have the talent...
                         </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://iparaj.github.io/research/" target="_blank"><i class="fas fa-external-link-alt"></i> Link</a>
+                       
                     </div>
                 </div>
             </div>
@@ -102,13 +159,17 @@
                     </div>
                      <div class="body">
                         <h4 class="title" style="font-size: 1.2em;">
-                            <a href="https://iparaj.github.io/files/quotes.pdf">                             
-                            Quotes that inspire me
+                            <a href="https://iparaj.github.io/research/">                             
+                            Speculation in US markets makes Indian markets look sane
                             </a>
                         </h4>
-                        <span class="domain" style="font-size: 1.1em;">iparaj.github.io</span>
-                        <div class="description" style="font-size: 1.05em;">It doesn’t matter what we want...
+                        <span class="domain" style="font-size: 1.1em;">x.com</span>
+                        <div class="description" style="font-size: 1.05em;">We have the talent...
                         </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://iparaj.github.io/research/" target="_blank"><i class="fas fa-external-link-alt"></i> Link</a>
+                       
                     </div>
                 </div>
             </div>
@@ -120,13 +181,17 @@
                     </div>
                       <div class="body">
                         <h4 class="title" style="font-size: 1.2em;">
-                            <a href="https://www.youtube.com/watch?v=oapzWU3ttqg&list=PLo_kACldkDnpJ91m9Ej2d8ZbImJh3STxS">                             
-                            Add collection
+                            <a href="https://iparaj.github.io/research/">                             
+                            Speculation in US markets makes Indian markets look sane
                             </a>
                         </h4>
-                        <span class="domain" style="font-size: 1.1em;">youtube.com</span>
-                        <div class="description" style="font-size: 1.05em;">Cadbury Celebrations - Raksha Bandhan
+                        <span class="domain" style="font-size: 1.1em;">x.com</span>
+                        <div class="description" style="font-size: 1.05em;">We have the talent...
                         </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://iparaj.github.io/research/" target="_blank"><i class="fas fa-external-link-alt"></i> Link</a>
+                        
                     </div>
                 </div>
             </div>
@@ -138,13 +203,17 @@
                     </div>
                       <div class="body">
                         <h4 class="title" style="font-size: 1.2em;">
-                            <a href="https://www.imdb.com/list/ls593655023/?ref_=wl_1&sort=alpha%2Casc">                             
-                            Movies I like
+                            <a href="https://iparaj.github.io/research/">                             
+                            Speculation in US markets makes Indian markets look sane
                             </a>
                         </h4>
-                        <span class="domain" style="font-size: 1.1em;">imdb.com</span>
-                        <div class="description" style="font-size: 1.05em;">3 Idiots, A Wednesday, A Beautiful Mind,...
+                        <span class="domain" style="font-size: 1.1em;">x.com</span>
+                        <div class="description" style="font-size: 1.05em;">We have the talent...
                         </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://iparaj.github.io/research/" target="_blank"><i class="fas fa-external-link-alt"></i> Link</a>
+                       
                     </div>
                 </div>
             </div>

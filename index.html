@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paraj Ganchaudhuri</title>
+    <title>Home | Paraj Ganchaudhuri</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./elements/style.css">
     <link rel="stylesheet" href="./elements/home.css">
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./elements/mobile.css">
+    <link rel="stylesheet" href="./elements/mobile-home.css">
+</head>
 </head>
 <body>
     <div class="container">
@@ -15,6 +19,33 @@
             <i class="fas fa-bars"></i>
         </button>
         <div class="overlay" id="overlay"></div>
+
+        <!-- Mobile Navigation Drawer -->
+        <nav class="nav-drawer">
+            <div class="nav-drawer-header">
+                <h2>Navigation</h2>
+            </div>
+            <div class="nav-drawer-content">
+                <a href="index.html" class="tab">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="./elements/resources.html" class="tab">
+                    <i class="fas fa-folder-open"></i> Resources
+                </a>
+                <a href="./elements/research.html" class="tab">
+                    <i class="fas fa-flask"></i> Research
+                </a>
+                <a href="./elements/bio.html" class="tab">
+                    <i class="fas fa-user-graduate"></i> Bio
+                </a>
+                <a href="./elements/blog.html" class="tab">
+                    <i class="fas fa-blog"></i> Blog
+                </a>
+                <a href="./elements/photography.html" class="tab">
+                    <i class="fas fa-camera"></i> Photography
+                </a>
+            </div>
+        </nav>
 
         <main class="main-content" id="mainContent">
             <div class="nav-tabs-container">
@@ -60,16 +91,20 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="hero-image">
-                        <img src="https://iparaj.github.io/images/iparaj.jpg" alt="Research Lab" style="width: 300px; height: 300px; border-radius: 8px;"></div>
+                    <div class="hero-right">
+                        <div class="hero-image">
+                            <img src="./images/paraj.jpeg" alt="Research Lab"></div>
+                        <div class="social-links">
+                            <a href="https://x.com/gparaj" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/iparaj/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/iparaj" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://scholar.google.com.au/citations?user=HPxCOf4AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                            <a href="mailto:gparaj@iitg.ac.in" title="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="hero-divider">
-                    <div class="divider-line"></div>
-                    <div class="divider-text">
-                        <i class="fas fa-landmark"></i>
-                       IIT Guwahati
-                    </div>
                     <div class="divider-line"></div>
                 </div>
 
@@ -81,9 +116,7 @@
                         <div class="news-timeline">
                             <div class="news-item">
                                 <div class="news-date">
-                                    <span class="news-day">01</span>
-                                    <span class="news-month">Dec</span>
-                                    <span class="news-year">2025</span>
+                                    <span class="news-day">01 Dec 2025</span>
                                 </div>
                                 <div class="news-content">
                                     <p class="news-description">Served as an Associate Editor for ICRA, Humanoids and IROS in 2025.</p>
@@ -92,9 +125,7 @@
                             
                             <div class="news-item highlight">
                                 <div class="news-date">
-                                    <span class="news-day">01</span>
-                                    <span class="news-month">Jun</span>
-                                    <span class="news-year">2025</span>
+                                    <span class="news-day">01 Jun 2025</span>
                                 </div>
                                 <div class="news-content">
                                    <p class="news-description">Received the best paper award for the year 2024 from IEEE RAS TC on Model-Based Optimization.</p>
@@ -103,9 +134,8 @@
                             
                             <div class="news-item">
                                 <div class="news-date">
-                                    <span class="news-day">01</span>
-                                    <span class="news-month">Jun</span>
-                                    <span class="news-year">2025</span>
+                                    <span class="news-day">01 Jun 2025</span>
+
                                 </div>
                                 <div class="news-content">
                                     <p class="news-description">Received the best paper award for the year 2024 from IEEE RAS TC on Model-Based Optimization.</p>
@@ -113,6 +143,8 @@
                             </div>
                         </div>
                     </div>
+
+                  
 
             <!-- Back to Top Button -->
             <button class="back-to-top" id="backToTop">
@@ -122,11 +154,15 @@
     </div>
    
     <div id="footer-container"></div>
+
+    
+    <script src="./elements/script.js"></script>
+
     <script>
          // Load footer dynamically if footer-container exists
     const footerContainer = document.getElementById('footer-container');
     if (footerContainer) {
-        fetch('./index-footer.html')
+        fetch('./elements/footer.html')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Footer not found');
