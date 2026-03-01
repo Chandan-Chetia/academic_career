@@ -1,3 +1,5 @@
+![Desktop View](images/desktopview.png)
+
 # Dr. Paraj - Academic & Research Portfolio
 
 ## Overview
